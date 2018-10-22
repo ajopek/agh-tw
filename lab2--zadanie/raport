@@ -1,0 +1,9 @@
+2. While jest niezbędny, ponieważ użycie wyłącznie instrukcji warunkowej if, nie rozwiązuje problemu sprawdzenia warunku po obudzeniu przez wywołanie notify. Wartościowanie tego warunku mogłoby się zmienić przez inny wątek.
+3. Przy ograniczeniu liczby obsługiwanych sygnałów, semafor licznikowy redukuje się do semafora binarnego. Z tego wynika, że semafor licznikowy jest ogólniejszy od semafora binarnego.
+5. Trzy wybrane algorytmy:
+	- Centralny zarządca zasobów
+	- Z góry ustalona hierarchia zasobów
+	- Wspólna strategia dla każdego z filozofów (np. wzięcie lewej pałeczki najpierw)
+Te trzy algorytmy, z osobnym bytem do zarządzania, z wspólną strategią, oraz najbardziej pospolite, brutalne rozwiązanie z wzięciem lewej pałeczki, dobrze ilustrują różne podejścia do tego samego problemu.
+Wersja zachłanna może prowadzić do zakleszczeń.
+Centralny zarządca deleguje główny problem do osobnego bytu, co jest ciekawym podejściem.
